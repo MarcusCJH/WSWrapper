@@ -24,7 +24,8 @@ namespace WebSocketWrapper
             
             
         }
-        
+
+        #region Instruction Group
         private void btnInstructionSearchDirectory_Click(object sender, EventArgs e)
         {
             string filePath = "";
@@ -34,12 +35,6 @@ namespace WebSocketWrapper
             {
                 filePath = file.FileName;
             }
-            
-            //FolderBrowserDialog folderBrowserDialog1 = new FolderBrowserDialog();
-            //if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
-            //{
-             //   folderPath = folderBrowserDialog1.SelectedPath;
-            //}
             tbxInstructionDirectory.Text = filePath;
         }
 
@@ -76,8 +71,9 @@ namespace WebSocketWrapper
                 btnInitalizeStart.Enabled = false;
             }
         }
+        #endregion
 
-
+        #region Console Group & Initialize of program
         Process _cmd;
 
         delegate void SetTextCallback(string text);
@@ -228,9 +224,10 @@ namespace WebSocketWrapper
             }
         }
 
-        
+        #endregion 
 
-        private void TaxiSimulator_FormClosed(object sender, FormClosedEventArgs e)
+        #region Form Closing settings
+        private void WebSocketWrapper_FormClosed(object sender, FormClosedEventArgs e)
         {
             try
             {
@@ -241,12 +238,12 @@ namespace WebSocketWrapper
 
             }
         }
+        #endregion
 
-        
 
-        
-        
 
-       
+
+
+
     }
 }

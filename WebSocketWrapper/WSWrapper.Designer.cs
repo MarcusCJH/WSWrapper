@@ -190,7 +190,7 @@
             this.MinimizeBox = false;
             this.Name = "WebSocketWrapper";
             this.Text = "WebSocket Wrapper";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TaxiSimulator_FormClosed);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WebSocketWrapper_FormClosed);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
