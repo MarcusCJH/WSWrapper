@@ -118,6 +118,8 @@
             // 
             // tbxConsoleLog
             // 
+            this.tbxConsoleLog.BackColor = System.Drawing.Color.Black;
+            this.tbxConsoleLog.ForeColor = System.Drawing.Color.Lime;
             this.tbxConsoleLog.Location = new System.Drawing.Point(7, 20);
             this.tbxConsoleLog.Name = "tbxConsoleLog";
             this.tbxConsoleLog.Size = new System.Drawing.Size(451, 299);
